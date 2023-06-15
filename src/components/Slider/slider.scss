@@ -1,0 +1,232 @@
+@import "../../app.scss";
+
+.slider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    @include mobile{
+        
+    }
+    
+    
+    .donate{
+        position: absolute;
+        z-index: 998;
+        padding: 20px;
+        background-color: rgb(180, 0, 0);
+        margin-top: 0;
+        margin-bottom: 0;
+        margin: auto;
+        left: -20px;
+        color: white;
+        font-weight: 500;
+        cursor: pointer;
+        &:hover{
+            background-color: rgb(161, 0, 0);
+        }
+        
+        transform: rotate(90deg);
+        @include mobile{
+            font-size: 12px;
+            padding: 10px;
+            left: -12px;
+        }
+
+    }
+    
+
+    .container{
+        gap: 20px;
+        padding: 100px 300px;
+        @include mobile{
+            padding: 100px 30px;
+            gap: 40px;
+            
+        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        display: flex;
+        transition: all 0.5s ease;
+
+        img{
+            width: 100vw;
+            height: 100%;
+            object-fit: cover;
+            display: flex;
+            flex-direction: column;
+            flex: start;
+        }
+
+        .intro{
+            display: flex;
+            gap: 20px;
+            
+            
+            height: 500px;
+            width: 100%;
+
+            @include mobile{
+                height: fit-content;
+                
+                flex-direction: column-reverse;
+            }
+                      
+            .profile{
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 80%;
+                    @include mobile{
+                        height: 250px;
+                        object-fit: cover;
+                    }
+                }
+                flex: 1;
+                @include mobile{
+                    height: fit-content;
+                    border-radius: 50%;
+                    
+                }
+                background-color: rgb(160, 0, 0);
+                border-radius: 20px;
+
+                .name{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 20px;
+                    span{
+                        font-size: 22px;
+                        font-weight: 600;
+                        color: white;
+                        @include mobile{
+                            font-size: 18px;
+                        }
+                    }
+                    p{
+                        margin-top: 3px;
+                        font-size: 14px;
+                        @include mobile{
+                            font-size: 14px;
+                        }
+                        color: rgb(202, 202, 202);
+                        font-weight: 300;
+                    }
+                }
+            }
+            .desc{
+                flex: 2;
+                background-color: white;
+                border-radius: 20px;
+                @include mobile{
+                    padding: 20px;
+                    
+                }
+                display: flex;
+                flex-direction: column;
+                .heading{
+                    display: flex;
+                    flex: 1;
+                    font-size: 50px;
+                    font-weight: 700;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    color: rgb(160, 0, 0);
+                    @include mobile{
+                        font-size: 18px;
+                    }
+                }
+                .msg{
+                    display: flex;
+                    flex: 1;
+                    padding: 20px;
+                    font-weight: 14px;
+                    text-align: center;
+                    color: gray;
+                    @include mobile{
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            
+            
+        }.objective{
+                display: flex;
+                @include mobile{
+                    
+                }
+                gap: 20px;
+                flex-direction: column;
+                border-radius: 20px;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                background-color: rgb(160, 0, 0);
+
+                .title{
+                    padding: 20px;
+                    border-bottom: 2px solid rgb(255, 255, 255);
+                    span{
+                        font-size: 35px;
+                        font-weight: 700;
+                        color: white;
+                        @include mobile{
+                            font-size: 24px;
+                        }
+                    }
+                }
+                
+                .items{
+                    
+                    display: flex;
+                    @include mobile{
+                        flex-direction: column;
+                    }
+                    width: 100%;
+                    align-items: end;
+                    justify-content: space-around;
+                    @include mobile{
+                        align-items: center;
+                        justify-content: center;       
+                    }
+                    .item{
+                        padding: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+
+                        .icon{
+                            color: white;
+                        }
+                        
+                        .heading{
+                            font-weight: 500;
+                            font-size: 20px;
+                            color: white;
+                        }
+                        .msg{
+                            text-align: center;
+                            color: lightgray;
+                            max-width: 200px;
+                            font-size: 14px;
+                        }
+                    }
+                    
+                }
+            }
+    }
+
+    
+}

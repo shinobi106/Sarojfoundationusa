@@ -1,0 +1,68 @@
+@import "../../app.scss";
+
+
+.contact{
+    background-color: rgb(160, 0, 0);
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+   
+
+    .wrapper{
+        width: 50%;
+        display: flex;
+        @include mobile{
+            flex-direction: column;
+            gap: 10px;
+            .mail{
+                display: flex;
+            }       
+        }
+        align-items: center;
+        justify-content: space-between;
+        span{
+            @include mobile{
+                font-size: 12px;   
+            }
+        }
+
+        input{
+            padding: 10px;
+            @include mobile{
+             padding: 5px;
+             
+            }
+            border: none;
+            border-radius: 5px 0 0 5px;
+        }
+        
+
+        button{
+            padding: 10px;
+            color: white;
+            background-color: black;
+            border-radius: 0 5px 5px 0;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.5s ease;
+            @include mobile{
+                padding: 5px;
+                
+            }
+
+            &:hover{
+                color: red;
+                background-color: white;
+            }
+        }
+
+        .icons{
+            display: flex;
+            gap: 10px;
+            cursor: pointer;
+            
+        }
+    }
+}

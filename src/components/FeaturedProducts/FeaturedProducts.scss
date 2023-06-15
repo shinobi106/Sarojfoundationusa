@@ -1,0 +1,60 @@
+@import "../../app.scss";
+
+
+.FeaturedProducts{
+    margin: 100px 200px;
+    @include mobile{
+        margin: 30px 30px;
+    }
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+
+    .top{
+        display: flex;
+        align-items: center;
+        @include mobile{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        justify-content: space-between;
+        margin-bottom: 50px;
+
+        h1{
+            flex: 2;
+            text-transform: capitalize;
+            color: rgb(160, 0, 0);
+        }
+
+        p{
+            flex: 3;
+            color: gray;
+        }
+    }
+
+    .bottom{
+        display: flex;
+        justify-content: space-around;
+        @include mobile{
+            flex-direction: column;
+        }
+        gap: 50px;
+        background-color: rgb(160, 0, 0);
+        border-radius: 20px;
+
+        .item{
+            padding: 30px 20px;
+            color: white;
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           
+            .num{
+                font-size: 50px;
+            }
+        }
+    }
+}

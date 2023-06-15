@@ -1,0 +1,72 @@
+@import "../../app.scss";
+
+.products{
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    .team{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        padding: 50px;
+       
+
+        .heading{
+            padding: 20px;
+            h1{
+                font-weight: 700;
+                font-size: 40px;
+                color: rgb(160, 0, 0);
+            }
+        }
+
+        .card{
+           display: flex;
+           flex-direction: row;
+           @include mobile{
+            flex-direction: column;
+           }
+           gap: 50px;
+           background-color: white;
+           width: fit-content;
+        
+            .profile{
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+                max-height: 500px;
+                max-width: 300px;
+                img{
+                    width: 100%;
+                    height: 80%;
+                    object-fit: cover;
+                }
+                flex: 1;
+                background-color: rgb(160, 0, 0);
+                border-radius: 20px;
+
+                .name{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 20px;
+                    span{
+                        font-size: 22px;
+                        font-weight: 600;
+                        color: white;
+                    }
+                    p{
+                        margin-top: 3px;
+                        font-size: 14px;
+                        color: rgb(202, 202, 202);
+                        font-weight: 300;
+                }
+            }
+        }
+    }
+    }
+}
