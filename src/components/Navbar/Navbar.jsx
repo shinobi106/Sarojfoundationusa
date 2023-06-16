@@ -19,7 +19,7 @@ export const Navbar = () => {
           <Link className='link' to="/products/1"> Donation Hotline : +91-8826556784</Link>
         </div>
         <div className='item'>
-          <Link className='link' to="/products/2"> sarojfoundation2020@gmail.com</Link>
+          <Link className='link' to="/">ritu.tyagi@sarojfoundationusa.org</Link>
         </div>
     </div>
     <div className='navbar'>

@@ -31,8 +31,8 @@ export const Footer = () => {
           <span>
           91-8826556784
           </span>
-          <span>sarojfoundation2020@gmail.com</span>
-          <span>www.sarojfoundation.org</span>
+          <span>ritu.tyagi@sarojfoundationusa.org</span>
+          <span>www.sarojfoundationusa.org</span>
         </div>
       </div>
       <div className="bottom">

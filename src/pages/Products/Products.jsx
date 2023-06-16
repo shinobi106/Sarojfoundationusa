@@ -24,7 +24,7 @@ export default function Products() {
             </div>
           </div>
 
-          <div className='profile'>
+          {/* <div className='profile'>
             <img src='/img/ruby.jpeg' alt='none'/>
             <div className='name'>
               <span>Mrs. RUBY TYAGI</span>
@@ -38,7 +38,7 @@ export default function Products() {
               <span>Mrs. PREETI TYAGI</span>
               <p>SECRETARY</p>
             </div>
-          </div>
+          </div> */}
           </div>
           </div>
     </div>

@@ -8,7 +8,7 @@ export const Categories = () => {
     <div className="col">
       <div className="row">
         <img
-          src="/img/1.jpg"
+          src="/img/1.jpeg"
           alt=""
         />
         <button>
@@ -38,7 +38,7 @@ export const Categories = () => {
         />
         <button>
           <Link to="/products/1" className="link">
-            Children
+            Homeless People
           </Link>
         </button>
       </div>
